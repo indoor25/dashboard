@@ -1,0 +1,232 @@
+@use "../../mixins/index" as *;
+@use "../../presets/index" as *;
+
+
+.aside {
+  height: 1198px;
+  min-width: 306px;
+  padding: 37px 28px 0 28px;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  //border: 1px solid red;
+  background-color: $color-white;
+  // .aside__title
+  &__title {
+    position: relative;
+    display: flex;
+    margin-bottom: 50px;
+
+
+    & img {
+      margin-right: 8px;
+      padding-bottom: 3px;
+    }
+
+    & h2 {
+      font-size: 26px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      letter-spacing: 0.26px;
+      color: $color-black;
+    }
+
+    & span {
+      padding-left: 1.5px;
+      font-size: 10px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      letter-spacing: -0.1px;
+      color: #838383;
+    }
+  }
+
+  // .aside__content
+  &__content {
+    height: 100%;
+    display: grid;
+    position: relative;
+    //border: 1px solid black;
+    // .aside__content-bottom
+    &-bottom {
+      align-self: end;
+      margin-bottom: 76px;
+    }
+  }
+}
+
+.navbar {
+
+  // .navbar__list
+  &__list {
+
+    & li:first-of-type {
+      margin-bottom: 19px;
+
+      & .navbar__link-item svg {
+        margin-top: 2px;
+      }
+    }
+  }
+
+  // .navbar__item
+  &__item {
+    margin-bottom: 18px;
+    color: $color-gray-blue;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.14px;
+
+  }
+
+  // .navbar__link
+  &__link {
+    padding-left: 11px;
+    padding-right: 8px;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 8px;
+
+    &:hover {
+      background-color: $color-hover;
+
+      & svg path.fill {
+        fill: $color-white;
+      }
+
+      & svg path.stroke {
+        stroke: $color-white;
+      }
+
+      & p {
+        color: $color-white;
+      }
+
+      & p {
+        color: $color-white;
+      }
+
+      & .sub__icon svg path {
+        stroke: $color-white;
+      }
+    }
+
+    // .navbar__link-item
+    &-item {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+
+      & img {
+        //margin-top: 2px;
+
+      }
+    }
+
+    // .navbar__link_active
+    &_active {
+      background-color: #5932EA;
+
+      & p {
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: -0.14px;
+        color: $color-white;
+      }
+    }
+
+    &_active .sub__icon svg path {
+      stroke: $color-white;
+    }
+
+    &_active .stroke {
+      stroke: $color-white;
+    }
+
+    &_active .fill {
+      fill: $color-white;
+    }
+  }
+}
+
+
+.sub {
+  // .sub__icon
+  &__icon {
+    display: none;
+    margin-top: 5px;
+    margin-left: 2px;
+    // .sub__icon_inactive
+    &_invisible {
+      display: block;
+    }
+  }
+}
+
+.customer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  // .customer__photo
+  &__photo {
+    height: 42px;
+    width: 42px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  // .customer__info
+  &__info {
+  }
+
+  // .customer__info-name
+  &__info-name {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.14px;
+    color: $color-black;
+  }
+
+  // .customer__info-job
+  &__info-job {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.12px;
+    color: #757575;
+  }
+}
+
+
+// media
+@include lg {
+  .aside {
+    height: unset;
+    top: 0;
+    right: 0;
+    position: absolute;
+    display: none;
+    z-index: 10;
+
+    &__content-bottom {
+      align-self: unset;
+    }
+  }
+}
+
+@include lg-min {
+  .burger__menu {
+    display: none;
+  }
+}

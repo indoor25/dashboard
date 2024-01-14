@@ -1,0 +1,24 @@
+@use "sass:math";
+
+$font-main: 'Poppins', sans-serif;
+$font-size: 14px;
+
+
+$ul: 1340px;
+$xl: 1210px;
+$lg: 1010px;
+$md: 620px;
+$sm: 375px;
+
+$gap: 10px;
+$gap-sm: math.div($gap, 2);
+$gap-lg: $gap * 1.5;
+$gap-x2: $gap * 2;
+$gap-x2: $gap * 2;
+$gap-x3: $gap * 3;
+$gap-x4: $gap * 4;
+$gap-x5: $gap * 5;
+$gap-x7: $gap * 7;
+$gap-x10: $gap * 10;
+
+

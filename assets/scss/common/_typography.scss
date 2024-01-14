@@ -1,0 +1,49 @@
+@use "../mixins/index" as *;
+@use "../presets/index" as *;
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: $font-main;
+  font-size: $font-size;
+  color: $color-gray-dark;
+
+}
+
+body {
+  overflow-y: scroll;
+  background-color: $color-bg;
+}
+
+h1 {
+  margin: 0;
+  font-family: $font-main;
+  color: $color-black;
+}
+
+h2,
+h3 {
+  margin: 0;
+  font-family: $font-main;
+  color: $color-black;
+}
+
+a {
+  text-decoration: none;
+  color: $color-gray-blue;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}

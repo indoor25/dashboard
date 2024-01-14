@@ -1,0 +1,28 @@
+{
+  "name": "gulp-training",
+  "version": "2.0.0",
+  "main": "index.js",
+  "scripts": {
+    "editorconfig": "editorconfig-checker -exclude \"(libs|img|psd|bootstrap|normalize\\.|reset\\.|style\\.css)\""
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "browser-sync": "^2.29.1",
+    "css-mqpacker": "^7.0.0",
+    "cssnano": "^6.0.1",
+    "editorconfig-checker": "^5.0.1",
+    "gulp": "^4.0.2",
+    "gulp-csscomb": "^3.1.0",
+    "gulp-postcss": "^9.0.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.1.0",
+    "postcss": "^8.4.23",
+    "postcss-discard-comments": "^6.0.0",
+    "sass": "^1.62.1",
+    "sort-css-media-queries": "^2.2.0"
+  },
+  "dependencies": {
+    "swiper": "^11.0.5"
+  }
+}
