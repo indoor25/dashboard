@@ -739,6 +739,19 @@ p {
   height: 69px;
   padding-right: 0;
 }
+.table th:first-of-type {
+  min-width: 120px;
+}
+.table th:last-of-type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+
+  padding-left: 13px;
+}
 .table td:nth-of-type(3) {
   min-width: 120px;
 }

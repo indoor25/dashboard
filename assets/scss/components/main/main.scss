@@ -228,6 +228,16 @@
     align-items: center;
   }
 
+  & th:first-of-type {
+    min-width: 120px;
+  }
+
+  & th:last-of-type {
+    padding-left: 13px;
+    display: flex;
+    justify-content: center;
+  }
+
   & td:nth-of-type(3) {
     min-width: 120px;
   }
