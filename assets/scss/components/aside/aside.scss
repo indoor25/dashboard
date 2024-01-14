@@ -47,7 +47,7 @@
     height: 100%;
     display: grid;
     position: relative;
-    //border: 1px solid black;
+
     // .aside__content-bottom
     &-bottom {
       align-self: end;
@@ -92,7 +92,7 @@
     justify-content: space-between;
     border-radius: 8px;
 
-    &:hover {
+    &:hover, &:focus-visible {
       background-color: $color-hover;
 
       & svg path.fill {

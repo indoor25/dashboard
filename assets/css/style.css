@@ -334,22 +334,28 @@ p {
 
   border-radius: 8px;
 }
-.navbar__link:hover {
+.navbar__link:hover,
+.navbar__link:focus-visible {
   background-color: #5932ea;
 }
-.navbar__link:hover svg path.fill {
+.navbar__link:hover svg path.fill,
+.navbar__link:focus-visible svg path.fill {
   fill: #ffffff;
 }
-.navbar__link:hover svg path.stroke {
+.navbar__link:hover svg path.stroke,
+.navbar__link:focus-visible svg path.stroke {
   stroke: #ffffff;
 }
-.navbar__link:hover p {
+.navbar__link:hover p,
+.navbar__link:focus-visible p {
   color: #ffffff;
 }
-.navbar__link:hover p {
+.navbar__link:hover p,
+.navbar__link:focus-visible p {
   color: #ffffff;
 }
-.navbar__link:hover .sub__icon svg path {
+.navbar__link:hover .sub__icon svg path,
+.navbar__link:focus-visible .sub__icon svg path {
   stroke: #ffffff;
 }
 .navbar__link-item {
