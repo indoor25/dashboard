@@ -750,6 +750,7 @@ p {
 }
 .table th:nth-of-type(3) {
   width: 156px;
+  min-width: 120px;
 }
 .table th:nth-of-type(4) {
   width: 207px;
