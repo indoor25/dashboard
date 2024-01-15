@@ -3,7 +3,7 @@ $(document).ready(function () {
   const aside = $('.aside')
   const burgerMenu = $('.burger__menu')
   let winWidth = $(window).innerWidth()
-  
+
   function handleResize() {
     winWidth = $(window).innerWidth()
     if (winWidth > 1009 && burgerMenu.hasClass('burger_active')) {
@@ -13,7 +13,7 @@ $(document).ready(function () {
     }
   }
 
-  function handleBurger(flag) {
+  function handleBurger() {
     const containerHeight = $('.container').height()
     if (winWidth < 1010) {
       burgerMenu.toggleClass('burger_active');
@@ -37,5 +37,5 @@ $(document).ready(function () {
 
   $(window).on('load resize', handleResize)
   burgerMenu.on('click', handleBurger);
-  $('.navbar__link').on('click', () => handleBurger(true));
+  $('.navbar__link').on('click', () => handleBurger());
 });

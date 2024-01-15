@@ -150,7 +150,7 @@
 
   // .content__bottom
   &__bottom {
-    padding-bottom: 40px;
+    padding-bottom: 39px;
     padding-left: 38px;
     padding-right: 43px;
     display: flex;
@@ -230,17 +230,27 @@
 
   & th:first-of-type {
     min-width: 120px;
+    width: 172px;
+  }
+
+  & th:nth-of-type(2) {
+    width: 131px;
+  }
+
+  & th:nth-of-type(3) {
+    width: 156px;
+  }
+
+  & th:nth-of-type(4) {
+    width: 207px;
   }
 
   & th:last-of-type {
-    padding-left: 13px;
+    padding-left: 6px;
     display: flex;
     justify-content: center;
   }
 
-  & td:nth-of-type(3) {
-    min-width: 120px;
-  }
 
   & tr {
     position: relative;
@@ -258,7 +268,7 @@
 
   // .table__wrapper
   &__wrapper {
-    padding-bottom: 29px;
+    padding-bottom: 30px;
     padding-left: 37px;
     padding-right: 44px;
   }
@@ -284,11 +294,13 @@
   // .customer__active
   &__active {
     width: 80px;
-    padding: 4px 12px;
+    padding-top: 3px;
+    padding-right: 12px;
+    padding-left: 11px;
+    padding-bottom: 3px;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -312,7 +324,7 @@
   gap: 12px;
 
   &__dots {
-    padding-bottom: 6px;
+    padding-bottom: 4px;
     align-self: end;
     font-size: 12px;
     font-style: normal;
@@ -326,7 +338,7 @@
   &__item, .left__arrow, .right__arrow {
     width: 25px;
     display: inline-flex;
-    padding: 6px 9px;
+    padding: 5px 9px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -387,7 +399,7 @@
   }
   .content {
     &__bottom {
-      padding-top: 29px;
+      padding-top: 30px;
     }
   }
 }

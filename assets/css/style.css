@@ -247,6 +247,8 @@ p {
   padding: 37px 28px 0 28px;
 
   background-color: #ffffff;
+  -webkit-box-shadow: 0 10px 60px 0 rgba(226, 236, 249, 0.5);
+          box-shadow: 0 10px 60px 0 rgba(226, 236, 249, 0.5);
 
   grid-template-rows: auto 1fr;
 }
@@ -614,7 +616,7 @@ p {
   justify-content: space-between;
 
   padding-right: 43px;
-  padding-bottom: 40px;
+  padding-bottom: 39px;
   padding-left: 38px;
 
   row-gap: 20px;
@@ -740,7 +742,17 @@ p {
   padding-right: 0;
 }
 .table th:first-of-type {
+  width: 172px;
   min-width: 120px;
+}
+.table th:nth-of-type(2) {
+  width: 131px;
+}
+.table th:nth-of-type(3) {
+  width: 156px;
+}
+.table th:nth-of-type(4) {
+  width: 207px;
 }
 .table th:last-of-type {
   display: -webkit-box;
@@ -750,10 +762,7 @@ p {
   -ms-flex-pack: center;
   justify-content: center;
 
-  padding-left: 13px;
-}
-.table td:nth-of-type(3) {
-  min-width: 120px;
+  padding-left: 6px;
 }
 .table tr {
   position: relative;
@@ -773,7 +782,7 @@ p {
 }
 .table__wrapper {
   padding-right: 44px;
-  padding-bottom: 29px;
+  padding-bottom: 30px;
   padding-left: 37px;
 }
 .table__head-col {
@@ -806,7 +815,10 @@ p {
   justify-content: center;
 
   width: 80px;
-  padding: 4px 12px;
+  padding-top: 3px;
+  padding-right: 12px;
+  padding-bottom: 3px;
+  padding-left: 11px;
 
   letter-spacing: -0.14px;
 
@@ -818,8 +830,6 @@ p {
   font-weight: 500;
   font-style: normal;
   line-height: normal;
-
-  gap: 10px;
 }
 
 .active {
@@ -839,7 +849,7 @@ p {
   -ms-flex-item-align: end;
   align-self: end;
 
-  padding-bottom: 6px;
+  padding-bottom: 4px;
 
   letter-spacing: -0.12px;
 
@@ -868,7 +878,7 @@ p {
   justify-content: center;
 
   width: 25px;
-  padding: 6px 9px;
+  padding: 5px 9px;
 
   -webkit-transition: 0.4s;
        -o-transition: 0.4s;
@@ -926,7 +936,7 @@ p {
     padding-right: 0;
   }
   .content__bottom {
-    padding-top: 29px;
+    padding-top: 30px;
   }
 }
 
